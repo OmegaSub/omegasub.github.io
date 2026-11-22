@@ -18,3 +18,14 @@
 .nav nav{gap:12px}
 @media(max-width:950px){.download-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{flex-wrap:wrap;justify-content:center;padding-block:10px}.nav nav{justify-content:center;flex-wrap:wrap}}
 @media(max-width:680px){.download-grid{grid-template-columns:1fr}.nav nav{gap:7px}.nav-github{font-size:11px;padding:7px 8px}.cta-downloads{width:100%}.cta-downloads .button{flex:1}.hero .actions .button{flex:1 1 145px}}
+
+/* Ajustes finais: downloads uniformes e redes sociais apos a navegacao */
+.nav .social-links{margin-left:8px}
+.nav nav{margin-left:auto;display:flex;align-items:center}
+.nav nav .social-links{display:flex;align-items:center}
+@media(max-width:680px){
+  .nav nav a:not(.nav-github){display:inline-flex}
+  .nav{flex-wrap:wrap;justify-content:center;gap:10px;padding-block:10px}
+  .nav nav{margin-left:0;justify-content:center;flex-wrap:wrap;gap:12px}
+  .nav nav .social-links{margin-left:0;gap:7px}
+}
