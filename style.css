@@ -40,3 +40,7 @@
 .project-copy{flex:1;min-width:0}.project-copy h3{margin:0 0 8px}.project-copy p{margin:0;color:var(--muted);font-size:15px}
 .project-card .button{flex-shrink:0;white-space:nowrap}
 @media(max-width:680px){.project-card{display:grid;grid-template-columns:48px minmax(0,1fr);gap:16px;padding:22px}.project-icon{width:48px;height:48px;font-size:32px}.project-card .button{grid-column:1/-1;white-space:normal}.projects-section{scroll-margin-top:175px}}
+
+.project-card + .project-card {
+  margin-top: 16px;
+}
